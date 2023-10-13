@@ -1,0 +1,21 @@
+Request:
+POST /API/products HTTP/1.1
+Host: www.example.com
+User-Agent: Mozilla/5.0
+Content-Type: application/json
+
+{
+    "name": "Product Name",
+    "price": 19.99
+}
+
+Response:
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 68
+
+{
+    "name": "Product Name",
+    "price": 19.99,
+    "availability": "in stock"
+}
